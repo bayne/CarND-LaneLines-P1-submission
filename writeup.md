@@ -28,7 +28,7 @@ My pipeline consists of multiple steps:
 
 ![solidyellowleft](https://cloud.githubusercontent.com/assets/712014/23243849/67b42b14-f936-11e6-93f4-46dddc3412ab.jpg)
 
-Lanes on the road are typically found as a single color and designed to stand-out from the background. We can use this fact to help us filter out elements in the image that irrelevant. To accomplish this, we use something called a color mask. A color mask can be applied to an image to remove all colors except for the ones we specify.
+Lanes on the road are typically found as a single color and designed to stand-out from the background. We can use this fact to help us filter out elements in the image that are irrelevant. To accomplish this, we use something called a color mask. A color mask can be applied to an image to remove all colors except for the ones we specify.
 
 This can be done using OpenCV's [`cv2.inRange(src, lowerb, upperb[, dst]) → dst`](http://docs.opencv.org/3.0-beta/modules/core/doc/operations_on_arrays.html?highlight=inrange#cv2.inRange) thresholding function. You provide the image and a range of the colors you want to create a mask for.
 
